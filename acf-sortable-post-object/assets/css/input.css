@@ -1,0 +1,53 @@
+.acf-field-sortable-post-object-wrap .acf-input-wrap {
+  display: none!important;
+}
+
+.acf-field-sortable-post-object-wrap > ul {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  padding: 0px;
+  min-height: 60px;
+  list-style: none;
+  float: left;
+  margin-left: -1px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.acf-field-sortable-post-object-wrap > ul:before {
+  content: '';
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+.acf-field-sortable-post-object-wrap > ul.acf-field-sortable-post-object-available {
+  border-right: 1px solid #000;
+}
+
+.acf-field-sortable-post-object-wrap > ul.acf-field-sortable-post-object-available:before {
+  content: 'Post disponibili';
+}
+
+.acf-field-sortable-post-object-wrap > ul.acf-field-sortable-post-object-chosen {
+  border-left: 1px solid #000;
+}
+
+.acf-field-sortable-post-object-wrap > ul.acf-field-sortable-post-object-chosen:before {
+  content: 'Post Selezionati';
+}
+
+.acf-field-sortable-post-object-wrap > ul > li {
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  height: 100%;
+}
